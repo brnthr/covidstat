@@ -1,18 +1,47 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Covidstat App"/>
+    <Content />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Content from '@/components/Content.vue';
 
 export default {
-  name: 'Home',
+  name: 'home',
   components: {
-    HelloWorld
+    Content
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './src/scss/index.scss';
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: 100%;
+  color: $primary;
+
+  .page {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100% - 75px);
+
+    .content {
+      flex-grow: 1;
+      overflow: scroll;
+
+      & > div {
+        display: flex;
+        justify-content: flex-start;
+        padding: 32px;
+      }
+    }
+  }
+}
+</style>

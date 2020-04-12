@@ -1,4 +1,4 @@
-# covidstat
+# aeroplan
 
 ## Project setup
 ```
