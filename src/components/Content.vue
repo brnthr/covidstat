@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <Card :title="'Card 1'" :content="'Lorem ipsum imdolorea'" :width="'full'"/>
+    <Card :title="'Card'" :content="''" :width="'full'"/>
   </div>
 </template>
 

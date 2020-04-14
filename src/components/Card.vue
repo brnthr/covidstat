@@ -2,6 +2,19 @@
   <div class="card" :class="{full: (width === 'full'), half:(width === 'half')}">
     <span class="title">{{ title }}</span>
     <span class="content">{{ content }}</span>
+    <p>
+      <label for="country">Your country </label>
+      <select
+        id="country"
+        v-model="country"
+        name="country"
+      >
+        <option>France</option>
+        <option>England</option>
+        <option>Deutchland</option>
+        <option>Germany</option>
+      </select>
+    </p>
   </div>
 </template>
 
