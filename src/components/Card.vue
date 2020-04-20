@@ -4,10 +4,7 @@
     <span class="content">{{ content }}</span>
     <p>
       <label for="country">Your country </label>
-      <select
-        id="country"
-        v-model="country"
-        name="country"
+      <select id="country" v-model="country" name="country"
       >
         <option>France</option>
         <option>England</option>
